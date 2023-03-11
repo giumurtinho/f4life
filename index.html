@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F4LIFE</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=IBM+Plex+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="test-project">
+        <header class="container-cabecalho">
+            <div class="logo-incial">
+                <img id="logo-f4life" src="img/logo.png" alt="Logo da F4life">
+            </div>
+            <nav class ="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">Início</a></li>
+                    <li><a href="#" class="nav-link">Quem somos?</a></li>
+                    <li><a href="#" class="nav-link">Entre em contato</a></li>
+                </ul>
+                <p class="icone-linhas">&#9776;</p>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>  
+            </div>
+        </header>
+        <script src="script.js"></script>
+        <main>
+            <nav class="container-inicial">
+                <div class="texto-inicial">
+                    <h1>Encontre o seu lugar!</h1>
+                    <p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
+                    <input type="submit" value="Saiba Mais" class="Saiba Mais">
+                </div>
+                <div class="imagem-inicial">
+                    <img id="img-numero-1" src="img/imagem-inicial.png" alt="Arte inicial da página">
+                    <div>
+            </nav>
+            <section class="container-central">
+                <div class="texto-central">
+                    <h2>Quem Somos?</h2>
+                    <p>F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
+                    <p>Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para
+                        recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de
+                        graduação.
+                    </p>
+                </div>
+                <div class="imagem-central">
+                    <img id="img-numero-2" src="img/imagem-central.png" alt="Arte central da página">
+                </div>
+                <div class="section-mobile-client">
+                    <h3>Veja a opinião dos nossos clientes</h3>
+                    <div class="card-container">
+                        <img id="perfil" src="img/perfil1.png" alt="Perfil do Cliente">
+                        <p id="nome">Astrogildo</p>
+                        <p id="frase">“A F4Life prestou um serviço incrível”</p>
+                    </div>
+                    <div class="card-container">
+                        <img id="perfil" src="img/perfil2.png" alt="Perfil do Cliente">
+                        <p id="nome">Creuza</p>
+                        <p id="frase">“Serviço de qualidade com um preço justo”</p>
+                    </div>
+                    <div class="card-container">
+                        <img id="perfil" src="img/perfil3.png" alt="Perfil do Cliente">
+                        <p id="nome">Jurema</p>
+                        <p id="frase">“Já tive experiência com outras empresas, mas a F4Life, sem duvidas tem o melhor
+                            serviço.”
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <section class="container-final">
+                <form class="formulario-entrar-em-contato">
+                    <h4>Entre em Contato</h4>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+                    <input id="input-enviar" type="submit" value="Enviar" class="enviar">
+                </form>
+                <div class="imagem-final">
+                    <img id="img-numero-3" src="img/imagem-final.png" alt="Arte final da página">
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">
+            <div class="logo-rodape">
+                <img src="img/logo.png" alt="Logo da F4life">
+            </div>
+            <div class="logo-rede-social">
+                <a><img id="logo-facebook" src="img/akar-icons_facebook-fill.png" alt="Logo Facebook"></a>
+                <a><img id="logo-linkedin" src="img/brandico_linkedin-rect.png" alt="Logo Linkedin"></a>
+                <a><img id="logo-twitter" src="img/ant-design_twitter-circle-filled.png" alt="Logo Twitter"></a>
+            </div>
+            <div class="direitos-de-uso-rodape">
+                <p>Todos os direitos reservados © 2023 F4LIFE</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(".container-itens-header").on("click", function () {
+            $(".componetes-header").toggleClass("hidden");
+        });
+
+    </script>
+</body>
+
+</html>
